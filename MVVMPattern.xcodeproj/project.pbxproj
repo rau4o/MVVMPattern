@@ -15,6 +15,12 @@
 		AEE1F8EB23DCB36E001CA775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE1F8E923DCB36E001CA775 /* LaunchScreen.storyboard */; };
 		AEE1F8F623DCB36E001CA775 /* MVVMPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F8F523DCB36E001CA775 /* MVVMPatternTests.swift */; };
 		AEE1F90123DCB36F001CA775 /* MVVMPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F90023DCB36F001CA775 /* MVVMPatternUITests.swift */; };
+		AEE1F91423DCB4AC001CA775 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F91323DCB4AC001CA775 /* Model.swift */; };
+		AEE1F91623DCB6AD001CA775 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F91523DCB6AD001CA775 /* ViewModel.swift */; };
+		AEE1F91823DCBE07001CA775 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F91723DCBE07001CA775 /* MainView.swift */; };
+		AEE1F91B23DCBE88001CA775 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F91A23DCBE88001CA775 /* UIView+Extension.swift */; };
+		AEE1F91D23DCC1A4001CA775 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F91C23DCC1A4001CA775 /* DetailViewController.swift */; };
+		AEE1F92123DCC5B5001CA775 /* DetailVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F92023DCC5B5001CA775 /* DetailVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		AEE1F8FC23DCB36E001CA775 /* MVVMPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE1F90023DCB36F001CA775 /* MVVMPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMPatternUITests.swift; sourceTree = "<group>"; };
 		AEE1F90223DCB36F001CA775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE1F91323DCB4AC001CA775 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AEE1F91523DCB6AD001CA775 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AEE1F91723DCBE07001CA775 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AEE1F91A23DCBE88001CA775 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AEE1F91C23DCC1A4001CA775 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AEE1F92023DCC5B5001CA775 /* DetailVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +111,13 @@
 		AEE1F8DD23DCB36D001CA775 /* MVVMPattern */ = {
 			isa = PBXGroup;
 			children = (
-				AEE1F8DE23DCB36D001CA775 /* AppDelegate.swift */,
-				AEE1F8E023DCB36D001CA775 /* SceneDelegate.swift */,
-				AEE1F8E223DCB36D001CA775 /* ViewController.swift */,
-				AEE1F8E423DCB36D001CA775 /* Main.storyboard */,
+				AEE1F91923DCBE6B001CA775 /* Extension */,
+				AEE1F91123DCB37D001CA775 /* Model */,
+				AEE1F91023DCB37B001CA775 /* View */,
+				AEE1F90F23DCB379001CA775 /* View Model */,
+				AEE1F90E23DCB374001CA775 /* Controller */,
+				AEE1F91223DCB39C001CA775 /* Supporting Files */,
 				AEE1F8E723DCB36E001CA775 /* Assets.xcassets */,
-				AEE1F8E923DCB36E001CA775 /* LaunchScreen.storyboard */,
 				AEE1F8EC23DCB36E001CA775 /* Info.plist */,
 			);
 			path = MVVMPattern;
@@ -126,6 +139,59 @@
 				AEE1F90223DCB36F001CA775 /* Info.plist */,
 			);
 			path = MVVMPatternUITests;
+			sourceTree = "<group>";
+		};
+		AEE1F90E23DCB374001CA775 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F8E223DCB36D001CA775 /* ViewController.swift */,
+				AEE1F91C23DCC1A4001CA775 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AEE1F90F23DCB379001CA775 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F91523DCB6AD001CA775 /* ViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AEE1F91023DCB37B001CA775 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F8E923DCB36E001CA775 /* LaunchScreen.storyboard */,
+				AEE1F8E423DCB36D001CA775 /* Main.storyboard */,
+				AEE1F91723DCBE07001CA775 /* MainView.swift */,
+				AEE1F92023DCC5B5001CA775 /* DetailVIew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEE1F91123DCB37D001CA775 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F91323DCB4AC001CA775 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEE1F91223DCB39C001CA775 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F8E023DCB36D001CA775 /* SceneDelegate.swift */,
+				AEE1F8DE23DCB36D001CA775 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEE1F91923DCBE6B001CA775 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F91A23DCBE88001CA775 /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE1F91623DCB6AD001CA775 /* ViewModel.swift in Sources */,
+				AEE1F91B23DCBE88001CA775 /* UIView+Extension.swift in Sources */,
+				AEE1F91823DCBE07001CA775 /* MainView.swift in Sources */,
 				AEE1F8E323DCB36D001CA775 /* ViewController.swift in Sources */,
 				AEE1F8DF23DCB36D001CA775 /* AppDelegate.swift in Sources */,
 				AEE1F8E123DCB36D001CA775 /* SceneDelegate.swift in Sources */,
+				AEE1F91423DCB4AC001CA775 /* Model.swift in Sources */,
+				AEE1F92123DCC5B5001CA775 /* DetailVIew.swift in Sources */,
+				AEE1F91D23DCC1A4001CA775 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
